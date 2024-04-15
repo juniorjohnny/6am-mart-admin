@@ -42,6 +42,7 @@ import ThirdParty from './Pages/ThirdParty';
 import FirebaseNotification from './Pages/FirebaseNotification';
 import LoginUrlPage from './Pages/LoginUrlPage';
 import OfflinePaymentSetup from './Pages/OfflinePaymentSetup';
+import DispatchOverview from './Pages/DispatchOverview';
 
 function App() {
 
@@ -105,6 +106,7 @@ function App() {
         <Route path='/business-settings/FirebaseNotification' element={<FirebaseNotification/>}></Route>
         <Route path='/business-settings/login-url-setup' element={<LoginUrlPage/>}></Route>
         <Route path='/business-settings/offline-payment' element={<OfflinePaymentSetup/>}></Route>
+        <Route path='/dispatch' element={<DispatchOverview/>}></Route>
         
         </Route>
         {/* <Route path="/login" element={<Login/>}></Route> */}
