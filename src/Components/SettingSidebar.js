@@ -270,7 +270,7 @@ const SettingSidebar = () => {
           ))}
         </Collapse>
       </List>
-      <Link className="" to="">
+      <Link className="" to="/react_site_setup">
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
