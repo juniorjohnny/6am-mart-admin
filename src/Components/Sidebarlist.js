@@ -22,6 +22,17 @@ import { MdCategory } from "react-icons/md";
 import { MdEditAttributes } from "react-icons/md";
 import { FaBalanceScale } from "react-icons/fa";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import BadgeIcon from "@mui/icons-material/Badge";
+import { RiTeamLine } from "react-icons/ri";
+import { FaBuildingColumns, FaGear, FaUserLarge } from "react-icons/fa6";
+import { GoDotFill } from "react-icons/go";
+import { IoMdHome } from "react-icons/io";
+import { HiOutlineWallet } from "react-icons/hi2";
+import { MdStarOutline } from "react-icons/md";
+import { IoMdChatbubbles } from "react-icons/io";
+import { PiMoneyFill } from "react-icons/pi";
+import { RiPhoneCameraFill } from "react-icons/ri";
+import { BsIncognito } from "react-icons/bs";
 
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -879,6 +890,253 @@ function Sidebarlist() {
         </List>
         </div>
       </List>
+      <div className="flex justify-start items-center mx-3 text-sm mt-5 mb-2">
+        EMPLOYEE MANAGEMENT
+      </div>
+      <Link className="" to="">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <BadgeIcon />
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Employee Role" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <ListItem disablePadding sx={{ display: "block" }}>
+        <ListItemButton
+          onClick={() => toggleDropdown("Dropdown3")}
+          sx={{
+            minHeight: 48,
+            justifyContent: open ? "initial" : "center",
+            px: 2.5,
+          }}
+        >
+          <ListItemIcon
+            sx={{
+              minWidth: 0,
+              mr: open ? 3 : "auto",
+              justifyContent: "center",
+              color: "black",
+            }}
+          >
+            <RiTeamLine />
+          </ListItemIcon>
+          <ListItemText primary="Employee" sx={{ opacity: open ? 1 : 0 }} />
+          {Isopen.Dropdown3 ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+        </ListItemButton>
+      </ListItem>
+      <div className="flex justify-start items-center mx-3 text-sm mt-5 mb-2">
+        Business Section
+      </div>
+      <Link className="" to="/store_config">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+            <FaGear fill="white" />
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Store Config" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <Link className="" to="/my_shop">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+            <IoMdHome fill="white" />
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="My Shop" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <Link className="" to="/my_wallet">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+            <HiOutlineWallet fill="white" />
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="My Wallet" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <Link className="" to="/disbursement">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+            <FaBuildingColumns fill="white" />
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Disbursement Method" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <Link className="" to="/review">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <MdStarOutline className="text-white text-xl" />
+
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Review" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+
+      <Link className="" to="/chat">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <IoMdChatbubbles className="text-white text-xl" />
+
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Chat" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+
+      <div className="flex justify-start items-center mx-3 text-sm mt-5 mb-2">
+        REPORT SECTION
+      </div>
+      <Link className="" to="/expencereport">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <PiMoneyFill className="text-white text-xl" />
+
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Expence Report" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <Link className="" to="/disbursementreport">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <RiPhoneCameraFill className="text-xl text-white" />
+
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Disbursment Report" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <div className="flex justify-start items-center mx-3 text-sm mt-5 mb-2">
+        EMPLOYEE MANAGEMENT
+      </div>
+      <Link className="" to="/employeerole">
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+            <BsIncognito className="text-white text-xl" />
+
+            </ListItemIcon>
+            <ListItemText className="-mx-3" primary="Employee Role" />
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      
+      <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItemButton
+            onClick={() => toggleDropdown("Dropdown6")}
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? "initial" : "center",
+              px: 2.5,
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : "auto",
+                justifyContent: "center",
+                color: "black",
+              }}
+            >
+              
+              <FaUserLarge className="text-white"/>
+
+            </ListItemIcon>
+            <ListItemText
+              className="-mx-2"
+              primary="Employee"
+              sx={{ opacity: open ? 1 : 0 }}
+            />
+            {Isopen.Dropdown6 ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+          </ListItemButton>
+        </ListItem>
+        <Collapse in={Isopen.Dropdown6} timeout={"auto"} unmountOnExit>
+          <Link onClick={""} to={"/addnew"}>
+            <ListItemButton>
+            <GoDotFill />
+
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 5 : "auto",
+                  justifyContent: "center",
+                }}
+              ></ListItemIcon>
+
+              <ListItemText
+                primary="Add new"
+                sx={{ opacity: open ? 1 : 0 }}
+              />
+              {/* <span className="ml-auto bg-blue-500 text-white rounded-full px-2 py-1 text-xs">
+          {30}
+        </span> */}
+            </ListItemButton>
+          </Link>
+          <Link onClick={""} to={"/listemployee"}>
+            <ListItemButton>
+            <GoDotFill />
+
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 5 : "auto",
+                  justifyContent: "center",
+                }}
+              ></ListItemIcon>
+
+              <ListItemText
+                primary="List"
+                sx={{ opacity: open ? 1 : 0 }}
+              />
+              {/* <span className="ml-auto bg-blue-500 text-white rounded-full px-2 py-1 text-xs">
+          {30}
+        </span> */}
+            </ListItemButton>
+          </Link>
+          <Link onClick={""} to={""}>
+            <ListItemButton>
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 5 : "auto",
+                  justifyContent: "center",
+                }}
+              ></ListItemIcon>
+
+              
+              {/* <span className="ml-auto bg-blue-500 text-white rounded-full px-2 py-1 text-xs">
+          {30}
+        </span> */}
+            </ListItemButton>
+          </Link>
+          <Link onClick={""} to={""}>
+            <ListItemButton>
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 5 : "auto",
+                  justifyContent: "center",
+                }}
+              ></ListItemIcon>
+
+              {/* <span className="ml-auto bg-blue-500 text-white rounded-full px-2 py-1 text-xs">
+          {30}
+        </span> */}
+            </ListItemButton>
+          </Link>
+        </Collapse>
     </>
   );
 }

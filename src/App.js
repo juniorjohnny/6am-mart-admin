@@ -18,6 +18,25 @@ import SubCategory from "./Pages/SubCategory";
 import Attributes from "./Pages/Attributes";
 import Units from "./Pages/Units";
 import AddNew from "./Pages/AddNew";
+import StoreConfig from "./Pages/StoreConfig";
+import MyStore from "./Pages/MyShop";
+import MyShop from "./Pages/MyShop";
+import MyWallet from "./Pages/MyWallet";
+import Disbursement from "./Pages/Disbursement";
+import Chat from "./Pages/Chat"
+import ExpenceReport from "./Pages/ExpenceReport"
+import DisbursementReport from "./Pages/DisbursementReport";
+import EmployeeRole from "./Pages/EmployeeRole";
+import ListEmployee from "./Pages/ListEmployee";
+import BusinessSettings from "./Pages/BusinessSettings";
+import ZoneSettings from "./Pages/ZoneSettings";
+import SocialSettings from "./Pages/SocialSettings";
+import PaymentGatewaySetup from "./Pages/PaymentGatewaySetup";
+import ReactSiteSetup from "./Pages/ReactSiteSetup";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsAndConditions from "./Pages/TermsAndConditions";
+import OrderSettings from "./Components/OrderSettings";
+import OrderCancellation from "./Components/OrderCancellation";
 import List from "./Pages/List";
 import ProductGallery from "./Pages/ProductGallery";
 import NewItemRequest from "./Pages/NewItemRequest";
@@ -37,7 +56,7 @@ import EmployeeList from './Pages/EmployeeList';
 import ZoneSetup from './Pages/ZoneSetup';
 import AddBusinessModule from './Pages/AddBusinessModule';
 import Modules from './Pages/Modules';
-import BusinessSettings from './Pages/BusinessSettings';
+// import BusinessSettings from './Pages/BusinessSettings';
 import ThirdParty from './Pages/ThirdParty';
 import FirebaseNotification from './Pages/FirebaseNotification';
 import LoginUrlPage from './Pages/LoginUrlPage';
@@ -98,16 +117,34 @@ function App() {
         <Route path='users/custom-role/create' element={<EmpolyeeRole/>}></Route>
         <Route path='/users/employee/AddNewEmployees' element={<AddNewEmployees/>}></Route>
         <Route path='/users/employee/List' element={<EmployeeList/>}></Route>
-        <Route path='/business-settings/zoneSetup' element={<ZoneSetup/>}></Route>
+        <Route path='/business-settings/ZoneSetup' element={<ZoneSettings/>}></Route>
         <Route path='/business-settings/moduleSetup/AddBusinessModule' element={<AddBusinessModule/>}></Route>
         <Route path='/business-settings/module' element={<Modules/>}></Route>
         <Route path='/business-settings/business-setup' element={<BusinessSettings/>}></Route>
-        <Route path='/business-settings/third-party/payment-method' element={<ThirdParty/>}></Route>
+        <Route path='/business-settings/third-party/payment-method' element={<PaymentGatewaySetup/>}></Route>
         <Route path='/business-settings/FirebaseNotification' element={<FirebaseNotification/>}></Route>
         <Route path='/business-settings/login-url-setup' element={<LoginUrlPage/>}></Route>
         <Route path='/business-settings/offline-payment' element={<OfflinePaymentSetup/>}></Route>
-        <Route path='/dispatch' element={<DispatchOverview/>}></Route>
-        
+        <Route path="/store_config" element={<StoreConfig />}></Route>
+          <Route path="/my_shop" element={<MyShop />}></Route>
+          <Route path="/my_wallet" element={<MyWallet />}></Route>
+          <Route path="/disbursement" element={<Disbursement />}></Route>
+          <Route path="/review" element={<Review />}></Route>
+          <Route path="/chat" element={<Chat />}></Route>
+          <Route path="/expencereport" element={<ExpenceReport />}></Route>
+          <Route path="/disbursementreport" element={<DisbursementReport />}></Route>
+          <Route path="/employeerole" element={<EmployeeRole />}></Route>
+          <Route path="/listemployee" element={<ListEmployee />}></Route>
+          <Route path="/business_settings" element={<BusinessSettings />}></Route>
+          <Route path="/business_settings/order_settings" element={<OrderSettings />}></Route>
+          <Route path="/business_settings/order_cancellation" element={<OrderCancellation />}></Route>
+          <Route path="/zone_settings" element={<ZoneSettings />}></Route>
+          <Route path="/social_settings" element={<SocialSettings />}></Route>
+          <Route path="/payment_gateway_setup" element={<PaymentGatewaySetup />}></Route>
+          <Route path="/react_site_setup" element={<ReactSiteSetup />}></Route>
+          <Route path="/privacy_policy" element={<PrivacyPolicy />}></Route>
+          <Route path="/terms_and_conditions" element={<TermsAndConditions />}></Route>
+        <Route path='/dispatch' element={<DispatchOverview/>}></Route>    
         </Route>
         {/* <Route path="/login" element={<Login/>}></Route> */}
       </Routes>

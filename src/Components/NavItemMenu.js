@@ -124,7 +124,7 @@ function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
                     </a>
                   </li>
                   <li>
-                    <a
+                    <Link to={"/zone_settings"}
               
                       className="next-tour"
                     >
@@ -133,11 +133,10 @@ function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
                         alt=""
                       />
                       <span>Zone Setup</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-
+                    <Link to="/business_settings"
                       className="next-tour"
                     >
                       <img
@@ -145,7 +144,7 @@ function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
                         alt=""
                       />
                       <span>Business Settings</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a
@@ -160,7 +159,7 @@ function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
                     </a>
                   </li>
                   <li>
-                    <a
+                    <Link to={"/social_settings"}
                     
                       className="next-tour"
                     >
@@ -169,7 +168,7 @@ function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
                         alt=""
                       />
                       <span>Social Media and Page Setup</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="flex items-center justify-center hover:text-green-300">
