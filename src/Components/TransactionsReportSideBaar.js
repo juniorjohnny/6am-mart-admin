@@ -34,7 +34,7 @@ const transactionsReportSideBaar = () => {
       </div>
       <List className="overflow-x-hidden text-sm space-y-[-25px]">
         <List>
-          <Link to="">
+          <Link to="/transactions/store/withdraw_list">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -46,7 +46,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/store-disbursement/">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -58,7 +58,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/dm-disbursement/">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -73,7 +73,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/account-transaction">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -85,7 +85,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/provide-deliveryman-earnings">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -100,7 +100,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/withdraw-method">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -118,20 +118,9 @@ const transactionsReportSideBaar = () => {
       </div>
       <List className="overflow-x-hidden text-sm space-y-[-25px]">
         {" "}
+       
         <List>
-          <Link to="">
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <GoHome className="text-white" />
-                </ListItemIcon>
-                <ListItemText className="-mx-6" primary="Withdrawal Requests" />
-              </ListItemButton>
-            </ListItem>
-          </Link>
-        </List>
-        <List>
-          <Link to="">
+          <Link to="/transactions/report/day-wise-report">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -143,7 +132,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/report/item-wise-report">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -155,7 +144,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/report/expense-report">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -167,7 +156,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/report/disbursement-report">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -182,7 +171,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/report/low-stock-report">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -197,7 +186,7 @@ const transactionsReportSideBaar = () => {
           </Link>
         </List>
         <List>
-          <Link to="">
+          <Link to="/transactions/report/order-report">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>

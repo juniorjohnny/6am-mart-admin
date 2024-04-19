@@ -43,11 +43,37 @@ import FirebaseNotification from './Pages/FirebaseNotification';
 import LoginUrlPage from './Pages/LoginUrlPage';
 import OfflinePaymentSetup from './Pages/OfflinePaymentSetup';
 import DispatchOverview from './Pages/DispatchOverview';
+import UnassignedOrders from './Pages/UnassignedOrders';
+import OngoingOrders from './Pages/OngoingOrders';
+import NewStore from './Pages/NewStore';
+import AddStore from './Pages/AddStore';
+import StoreList from './Pages/StoreList';
+import Recommended from './Pages/Recommended';
+import Import from './Pages/Import';
+import Export from './Pages/Export';
+import CategoryBulkImport from './Pages/CategoryBulkImport';
+import CategoryBulkExport from './Pages/CategoryBulkExport';
+import ProductImport from './Pages/ProductImport';
+import ProductBulkExport from './Pages/ProductBulkExport';
+import WithdrawRequest from './Pages/Transaction/WithdrawRequest'
+import StoreDisbursement from './Pages/Transaction/ StoreDisbursement'
+import Deliveryman from './Pages/Transaction/Deliveryman'
+import CollectCash from './Pages/Transaction/ CollectCash'
+import DeliverymenPayment from './Pages/Transaction/ DeliverymenPayment'
+import WithdrawMethod from './Pages/Transaction/WithdrawMethod'
+import ItemReport from './Pages/Transaction/ItemReport'
+import TransectionReport from './Pages/Transaction/TransectionReport'
+import ExpenseReport from './Pages/Transaction/ ExpenseReport'
+import DisbursementReport from './Pages/Transaction/ DisbursementReport'
+import LimiteStock from './Pages/Transaction/LimiteStock'
+import OrderReport from './Pages/Transaction/OrderReport'
+
+
 
 function App() {
 
   // Define state for loggedIn using useState
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   // Use useEffect to retrieve isLoggedIn value from localStorage
   useEffect(() => {
@@ -87,6 +113,16 @@ function App() {
         <Route path="/ProductGallery" element={<ProductGallery/>}></Route>
         <Route path="/NewItemReqeust" element={<NewItemRequest/>}></Route>
         <Route path="/Review" element={<Review/>}></Route>
+        <Route path="/NewStore" element={<NewStore/>}></Route>
+        <Route path='/AddStore' element={<AddStore/>}></Route>
+        <Route path="/StoreList" element={<StoreList/>}></Route>
+        <Route path='/RecommendedStore' element={<Recommended/>}></Route>
+        <Route path='/BulkImport' element={<Import/>}></Route>
+        <Route path="/BulkExport" element={<Export/>}></Route>
+        <Route path='/CategoryBulkImport' element={<CategoryBulkImport/>}></Route>
+        <Route path='/CategoryBulkExport' element={<CategoryBulkExport/>}></Route>
+        <Route path='/ProductImport' element={<ProductImport/>}></Route>
+        <Route path='/ProductBulkExport' element={<ProductBulkExport/>}></Route>
         <Route path="/Users/UserOverView" element={<UserOverview/>}></Route>
         <Route path='/Users/Customers' element={<Customers/>}></Route>
         <Route path='/Users/AddFund' element={<AddFund/>}></Route>
@@ -107,6 +143,20 @@ function App() {
         <Route path='/business-settings/login-url-setup' element={<LoginUrlPage/>}></Route>
         <Route path='/business-settings/offline-payment' element={<OfflinePaymentSetup/>}></Route>
         <Route path='/dispatch' element={<DispatchOverview/>}></Route>
+        <Route path='dispatch/UnassignedOrder/List' element={<UnassignedOrders/>}></Route>
+        <Route path='/dispatch/list/1/on_going' element={<OngoingOrders/>}></Route>
+        <Route path='/transactions/store/withdraw_list' element={<WithdrawRequest/>}></Route>
+        <Route path='/transactions/store-disbursement/' element={<StoreDisbursement/>}></Route>
+        <Route path='/transactions/dm-disbursement/' element={<Deliveryman/>}></Route>
+        <Route path='/transactions/account-transaction' element={<CollectCash/>}></Route>
+        <Route path='/transactions/provide-deliveryman-earnings' element={<DeliverymenPayment/>}></Route>
+        <Route path='/transactions/withdraw-method' element={<WithdrawMethod/>}></Route>
+        <Route path='/transactions/report/item-wise-report' element={<ItemReport/>}></Route>
+        <Route path='/transactions/report/day-wise-report' element={<TransectionReport/>}></Route>
+        <Route path='/transactions/report/expense-report' element={<ExpenseReport/>}></Route>
+        <Route path='/transactions/report/disbursement-report' element={<DisbursementReport/>}></Route>
+        <Route path='/transactions/report/low-stock-report' element={<LimiteStock/>}></Route>
+        <Route path='/transactions/report/order-report' element={<OrderReport/>}></Route>
         
         </Route>
         {/* <Route path="/login" element={<Login/>}></Route> */}

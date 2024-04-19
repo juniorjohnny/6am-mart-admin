@@ -46,7 +46,7 @@ const subMenuData = [
     icon: <MdOutlineSocialDistance />,
   },
 ];
-function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
+function NavItemMenu({ showUserSideNav, setShowUserSideNav,showUserTransactions,setShowUserTransactions }) {
   const [showCatMenu, setShowCatMenu] = useState(false);
   const userRoute = showUserSideNav ? "/" : "/Users/UserOverView";
   return (
@@ -76,8 +76,8 @@ function NavItemMenu({ showUserSideNav, setShowUserSideNav }) {
             {/* Transaction & Reports Navigation Item */}
             <li className="flex items-center">
               <Link
-                to="/transactions-reports"
-                onClick={() => setShowUserSideNav(!showUserSideNav)}
+                to=""
+                onClick={""}
                 className="flex items-center space-x-2"
               >
                 <TbReportAnalytics className="hidden md:inline" />{" "}

@@ -582,7 +582,7 @@ function Sidebarlist() {
         </span> */}
             </ListItemButton>
           </Link>
-          <Link onClick={""} to={""}>
+          <Link onClick={""} to={"/CategoryBulkImport"}>
             <ListItemButton>
               <ListItemIcon
                 sx={{
@@ -603,7 +603,7 @@ function Sidebarlist() {
         </span> */}
             </ListItemButton>
           </Link>
-          <Link onClick={""} to={""}>
+          <Link onClick={""} to={"/CategoryBulkExport"}>
             <ListItemButton>
               <ListItemIcon
                 sx={{
@@ -771,7 +771,7 @@ function Sidebarlist() {
         </span> */}
             </ListItemButton>
           </Link>
-          <Link onClick={""} to={""}>
+          <Link onClick={""} to={"/ProductImport"}>
             <ListItemButton>
               <ListItemIcon
                 sx={{
@@ -790,7 +790,7 @@ function Sidebarlist() {
         </span> */}
             </ListItemButton>
           </Link>
-          <Link onClick={""} to={""}>
+          <Link onClick={""} to={"/ProductBulkExport"}>
             <ListItemButton>
               <ListItemIcon
                 sx={{
@@ -818,7 +818,7 @@ function Sidebarlist() {
 
         <div>
         <List>
-          <Link to="/">
+          <Link to="/NewStore">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
@@ -828,7 +828,7 @@ function Sidebarlist() {
           </Link>
         </List>
         <List style={{ marginTop: '-14px' }}>
-          <Link to="/">
+          <Link to="/AddStore">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
@@ -838,7 +838,7 @@ function Sidebarlist() {
           </Link>
         </List>
         <List style={{ marginTop: '-14px' }}>
-          <Link to="/">
+          <Link to="/StoreList">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
@@ -848,7 +848,7 @@ function Sidebarlist() {
           </Link>
         </List>
         <List style={{ marginTop: '-14px' }}>
-          <Link to="/">
+          <Link to="/RecommendedStore">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
@@ -858,7 +858,7 @@ function Sidebarlist() {
           </Link>
         </List>
         <List style={{ marginTop: '-14px' }}>
-          <Link to="/">
+          <Link to="/BulkImport">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
@@ -868,7 +868,7 @@ function Sidebarlist() {
           </Link>
         </List>
         <List style={{ marginTop: '-14px' }}>
-          <Link to="/">
+          <Link to="/BulkExport">
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>

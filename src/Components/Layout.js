@@ -31,6 +31,8 @@ import { useEffect } from "react";
 import logo from "../Assests/Color horizontalPNG.png";
 import ProfileButton from "./ProfileButton";
 import SettingSidebar from "./SettingSidebar";
+import TransactionsReportSideBaar from './TransactionsReportSideBaar'
+import DispatchSidebaar from './DispatchSidebaar'
 
 
 //searchbaar
@@ -101,15 +103,24 @@ function Layout(props) {
   const location = useLocation();
 
   const [showUserSideNav, setShowUserSideNav] = React.useState(false);
+  const [showUserTransactions, setShowUserTransactions] = React.useState(false);
+  const [showUserSettings, setShowUserSettings] = React.useState(false);
+  const [showUserDispatch, setShowUserDispatch] = React.useState(false);
 
   useEffect(() => {
-    if(location.pathname === '/Users/UserOverView') setShowUserSideNav(true);
+    // if(location.pathname === '/Users/*') setShowUserSideNav(true);
+
+    const isUserPath = location?.pathname?.toLowerCase().includes('/users/');
+
+    // Set showUserSideNav based on the pathname condition
+    setShowUserSideNav(isUserPath);
   
     return () => {
       setShowUserSideNav(false);
     }
   }, [location.pathname])
-  
+
+
 
   const drawer = (
     <div className="bg-[#005555] h-full overflow-y-auto text-[#E9F3FF]">
@@ -130,18 +141,21 @@ function Layout(props) {
       </Search>
 
       {/* <Sidebarlist/> */}
-      {/* <div className="">
+      <div className="">
         {showUserSideNav ? <Usersidebaarlist /> : <Sidebarlist />}
+        {showUserTransactions ? <TransactionsReportSideBaar/>:<Sidebarlist/>}
+
         <div className="sticky bottom-0">
           <ProfileButton />
         </div>
-      </div> */}
+      </div>
       {/* <TransactionsReportSideBaar/> */}
-      <SettingSidebar/>
+      {/* <SettingSidebar/> */}
+      {/* <DispatchSidebaar/> */}
     </div>
   );
 
-  // Remove this const when copying and pasting into your project.
+
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
@@ -170,6 +184,7 @@ function Layout(props) {
             <NavItemMenu
               showUserSideNav={showUserSideNav}
               setShowUserSideNav={setShowUserSideNav}
+              
             />
           </div>
         </Toolbar>
