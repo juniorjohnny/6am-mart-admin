@@ -61,6 +61,7 @@ import ThirdParty from './Pages/ThirdParty';
 import FirebaseNotification from './Pages/FirebaseNotification';
 import LoginUrlPage from './Pages/LoginUrlPage';
 import OfflinePaymentSetup from './Pages/OfflinePaymentSetup';
+import DispatchOverview from './Pages/DispatchOverview';
 
 function App() {
 
@@ -143,8 +144,7 @@ function App() {
           <Route path="/react_site_setup" element={<ReactSiteSetup />}></Route>
           <Route path="/privacy_policy" element={<PrivacyPolicy />}></Route>
           <Route path="/terms_and_conditions" element={<TermsAndConditions />}></Route>
-        
-        
+        <Route path='/dispatch' element={<DispatchOverview/>}></Route>    
         </Route>
         {/* <Route path="/login" element={<Login/>}></Route> */}
       </Routes>
